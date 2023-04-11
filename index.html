@@ -31,7 +31,9 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link link" href="./index.html">Studio</a>
+              <a class="header-link link active-menu" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="header-item">
               <a class="header-link link" href="./portfolio.html">Portfolio</a>
@@ -66,7 +68,9 @@
           <h1 class="section-hero-text">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="button hero-btn">Order Service</button>
+          <button class="button hero-btn" data-modal-open type="button">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- section2 -->
@@ -434,5 +438,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="close-icons" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
